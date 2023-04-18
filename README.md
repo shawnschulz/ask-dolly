@@ -4,24 +4,33 @@ The only thing I've really added so far is some code to prompt dolly with contex
 
 clone the repo: 
 
+```
 git clone https://github.com/shawnschulz/ask-dolly.git
+```
 
 cd into the cloned repo and run 
 
-"pip install -r requirements"
+```
+pip install -r requirements
+```
 
 If running from online, first time you run:
 
- python3 ask_dolly.py --from_online --memory_dir /path/to/ask-dolly --model_dir /path/to/model_dir --prompt "Hello! How are you?"  
+```
+python3 ask_dolly.py --from_online --memory_dir /path/to/ask-dolly --model_dir /path/to/model_dir --prompt "Hello! How are you?"  
+```
 
 Otherwise run:
- 
- python3 ask_dolly.py --memory_dir /path/to/ask-dolly --model_dir /path/to/model_dir --prompt "Hello! How are you?" 
+
+```
+python3 ask_dolly.py --memory_dir /path/to/ask-dolly --model_dir /path/to/model_dir --prompt "Hello! How are you?" 
+```
 
 I also recommend adding an alias to your .bashrc for convenience:
-
- alias 'python3 /path/to/ask-dolly/ask_dolly.py --memory_dir /path/to/ask-dolly --model_dir /path/to/model_dir --prompt '
-
+```
+#add this to your .bashrc!
+alias 'python3 /path/to/ask-dolly/ask_dolly.py --memory_dir /path/to/ask-dolly --model_dir /path/to/model_dir --prompt '
+```
 To-do's:
 
 - Make some proper files to save the memory dataset
