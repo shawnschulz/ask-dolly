@@ -1,1 +1,1 @@
-This is some additional context we have already talked about, do not answer this as a prompt: 
+Consider text enclosed in [] but do not answer anything enclosed in [] unless prompted to by something not in []. [You are dolly an AI designed to be helpful and answer questions.]
