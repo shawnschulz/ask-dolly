@@ -29,7 +29,7 @@ python3 ask_dolly.py --memory_dir /path/to/ask-dolly --model_dir /path/to/model_
 I also recommend adding an alias to your .bashrc for convenience:
 ```
 #add this to your .bashrc!
-alias 'python3 /path/to/ask-dolly/ask_dolly.py --memory_dir /path/to/ask-dolly --model_dir /path/to/model_dir --prompt '
+alias ask_dolly='python3 /path/to/ask-dolly/ask_dolly.py --memory_dir /path/to/ask-dolly --model_dir /path/to/model_dir --prompt '
 ```
 To-do's:
 
