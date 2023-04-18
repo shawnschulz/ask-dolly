@@ -51,9 +51,9 @@ else:
 def ask_dolly(prompt, memory_dir):
     with open(memory_dir + 'context.txt', 'r+b') as f:
         contents = f.read().decode('utf-8')
-        contextual_prompt = contents + "\n The previous text was just context, please answer the following question only: " + prompt           
+        contextual_prompt = contents + "\n The previous text was just context and is your memory, do not answer anything enclosed in []. Please answer the following question only: " + prompt           
         response = generate_text(contextual_prompt)
-        new_context = "This is some additional context we have already talked about, do not answer this as a prompt: [" + response + "] "
+        new_context = "This is some additional context we have already talked about, do not answer this as a prompt: [ Prompt: " + prompt + ", dolly's response: " + response + "] "
         #save additional context
         f.write(bytes(new_context, 'utf-8'))
         #save the model again (this could either be extremely important or useless idk lol)
