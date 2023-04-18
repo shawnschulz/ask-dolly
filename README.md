@@ -14,7 +14,7 @@ cd into the cloned repo and run
 pip install -r requirements
 ```
 
-If running from online, first time you run:
+If running from online for the first time run:
 
 ```
 python3 ask_dolly.py --from_online --memory_dir /path/to/ask-dolly --model_dir /path/to/model_dir --prompt "Hello! How are you?"  
